@@ -10,19 +10,21 @@
 winget install --id Git.Git -e --source winget
 ```
 
-- nvim, using scoop:
+### Using scoop
+
+- install neovim, using scoop:
 
 ```
-scoop install nvim
+scoop install neovim
 ```
 
-- gcc (for nvim-treesitter)
+- install gcc (for nvim-treesitter)
 
 ```
 scoop install gcc
 ```
 
-- ripgrep & fd (for telescope)
+- install ripgrep & fd (for telescope)
 
 ```
 scoop install ripgrep fd
