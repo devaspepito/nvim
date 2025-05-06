@@ -4,7 +4,7 @@
 
 - scoop, choco or winget
 
-- git
+- Install git using winget
 
 ```
 winget install --id Git.Git -e --source winget
@@ -12,19 +12,19 @@ winget install --id Git.Git -e --source winget
 
 ### Using scoop
 
-- install neovim, using scoop:
+- Install neovim, using scoop:
 
 ```
 scoop install neovim
 ```
 
-- install gcc (for nvim-treesitter)
+- Install gcc (for nvim-treesitter)
 
 ```
 scoop install gcc
 ```
 
-- install ripgrep & fd (for telescope)
+- Install ripgrep & fd (for telescope)
 
 ```
 scoop install ripgrep fd
