@@ -1,7 +1,11 @@
-# Clone the repository
+# Clone the repository via https or ssh
 
 ```
 git clone https://github.com/devaspepito/nvim.git ~/.config/nvim
+```
+
+```
+git clone git@github.com:devaspepito/nvim.git ~/.config/nvim
 ```
 
 ## Remove .git
