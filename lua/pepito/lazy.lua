@@ -39,10 +39,10 @@ require("lazy").setup({
 		end,
 	},
 	{
-  		"folke/tokyonight.nvim",
-  		lazy = false,
-  		priority = 1000,
-  		opts = {},
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -170,6 +170,7 @@ require("lazy").setup({
 	},
 	{
 		"akinsho/toggleterm.nvim",
+		version = "*",
 	},
 	{
 		"folke/twilight.nvim",
@@ -209,13 +210,6 @@ require("lazy").setup({
 		"neoclide/coc-tsserver",
 		"neoclide/coc-snippets",
 	},
-	-- {
-	-- 	"mlaursen/vim-react-snippets",
-	-- 	dependencies = { "neoclide/coc-snippets" },
-	-- 	config = function()
-	-- 		require("vim-react-snippets").lazy_load()
-	-- 	end,
-	-- },
 	{
 		"xiyaowong/transparent.nvim",
 	},
