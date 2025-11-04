@@ -19,13 +19,6 @@ require("lazy").setup({
 		opts = {},
 	},
 	{
-		"norcalli/nvim-colorizer.lua",
-		config = function()
-			require("colorizer").setup()
-		end,
-	},
-	"RRethy/nvim-base16",
-	{
 		"altermo/ultimate-autopair.nvim",
 		event = { "InsertEnter", "CmdlineEnter" },
 		branch = "v0.6",
@@ -44,6 +37,12 @@ require("lazy").setup({
 		config = function()
 			vim.g.rosepine_enable_italic = "1"
 		end,
+	},
+	{
+  		"folke/tokyonight.nvim",
+  		lazy = false,
+  		priority = 1000,
+  		opts = {},
 	},
 	{
 		"windwp/nvim-autopairs",
@@ -67,13 +66,13 @@ require("lazy").setup({
 		},
 		config = function()
 			require("plugins.cmp")
-			-- require("plugins.nvim-cmp")
+			require("plugins.nvim-cmp")
 		end,
 	},
 	{
 		"L3MON4D3/LuaSnip",
 		after = "nvim-cmp",
-		dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets" },
+		dependencies = { "saadparwaiz1/cmp_luasnip", "rafamadriz/friendly-snippets", "mlaursen/vim-react-snippets" },
 		config = function()
 			require("plugins.luasnip")
 		end,
@@ -82,19 +81,6 @@ require("lazy").setup({
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
 		dependencies = { "nvim-lua/plenary.nvim" },
-	},
-	{
-		"adalessa/laravel.nvim",
-		dependencies = {
-			"tpope/vim-dotenv",
-			"nvim-telescope/telescope.nvim",
-			"MunifTanjim/nui.nvim",
-			"kevinhwang91/promise-async",
-		},
-		cmd = { "Laravel" },
-		event = { "VeryLazy" },
-		opts = {},
-		config = true,
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -190,9 +176,6 @@ require("lazy").setup({
 	},
 	{
 		"akinsho/bufferline.nvim",
-		config = function()
-			require("plugins.buffer")
-		end,
 	},
 	{
 		"ThePrimeagen/vim-be-good",
@@ -226,18 +209,11 @@ require("lazy").setup({
 		"neoclide/coc-tsserver",
 		"neoclide/coc-snippets",
 	},
-	{
-		"mlaursen/vim-react-snippets",
-		dependencies = { "neoclide/coc-snippets" },
-		config = function()
-			require("vim-react-snippets").lazy_load()
-		end,
-	},
-	-- testing my own nvim theme
 	-- {
-	-- 	"devaspepito/paradise.nvim",
+	-- 	"mlaursen/vim-react-snippets",
+	-- 	dependencies = { "neoclide/coc-snippets" },
 	-- 	config = function()
-	-- 		require("paradise.nvim").setup()
+	-- 		require("vim-react-snippets").lazy_load()
 	-- 	end,
 	-- },
 	{

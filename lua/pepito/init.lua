@@ -1,3 +1,5 @@
+require("pepito.lazy")
 require("pepito.keys")
 require("pepito.options")
-require("pepito.lazy")
+require("undo")
+print("What's up?")

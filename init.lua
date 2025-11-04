@@ -5,20 +5,11 @@ cmd = vim.cmd
 opt = vim.opt
 g = vim.g
 
-_G.theme = "paradise"
+require("pepito")
 
-local modules = {
-	"pepito",
-	"statusline",
-	"colors",
-}
-
-for _, a in ipairs(modules) do
-	local ok, err = pcall(require, a)
-	if not ok then
-		error("Error calling" .. a .. err)
-	end
-end
+-- colorscheme
+cmd[[colorscheme tokyonight-night]]
+vim.opt.clipboard = "unnamedplus"
 
 -- Auto commands
 api.nvim_create_autocmd("BufEnter", {
