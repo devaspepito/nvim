@@ -42,7 +42,7 @@ map("v", "<S-j>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc 
 map("v", "<S-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
 
 -- none-ls
-map("n", "<leader>ft", vim.lsp.buf.format, {})
+map("n", "<leader>ft", vim.lsp.buf.format, { desc = "Format document" })
 
 -- comment
 map("n", "<leader>/", "<Plug>(comment_toggle_linewise_current)")
