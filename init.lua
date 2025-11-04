@@ -8,15 +8,11 @@ g = vim.g
 require("pepito")
 
 -- colorscheme
-cmd[[colorscheme tokyonight-night]]
+cmd([[colorscheme tokyonight-night]])
 vim.opt.clipboard = "unnamedplus"
 
 -- Auto commands
 api.nvim_create_autocmd("BufEnter", {
 	pattern = "term://*",
 	command = "startinsert",
-})
-
-api.nvim_create_autocmd("VimLeave", {
-	command = "set guicursor=a:hor15",
 })
