@@ -10,7 +10,7 @@ git clone https://github.com/devaspepito/nvim.git ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 ```
 
-## Install dependencies (ArchLinux with yay/paru/pacman) pacman/yay recommended
+## Install dependencies (ArchLinux with yay/paru/pacman) pacman/paru recommended
 
 ```
 paru -Sy && paru -Syu && paru -Sy neovim lazygit gcc ripgrep fd --noconfirm --needed
